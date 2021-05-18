@@ -1,0 +1,61 @@
+$primary-color: #424242;
+.App{
+    min-height:100vh;
+    background-color: $primary-color;
+  }
+  .searchForm{
+    text-align: right;
+    background-color: #303030;
+    padding:3vh 0;
+  }
+  
+  .searchBar{
+    padding:1vh 1vw;
+    width:15vw;
+    outline: none;
+    border-radius: 10px 0px 0px 10px;
+    border:none;
+  }
+  .searchButton{
+    padding:2px 1vw;
+    border-radius: 0px 10px 10px 0px;
+    border:none;
+    background-color: $primary-color;
+
+    i{
+        font-size: 15px;
+        color:white;
+      }
+
+  }
+  .searchButton:hover{
+    cursor: pointer;
+  }
+
+  .repoCards{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+@media (max-width:420px){
+    .App{
+      max-width:420px;
+      overflow-x:hidden;
+    }
+    .searchForm{
+      text-align:center;
+    }
+    .searchBar{
+      width:50%;
+    }
+    .searchButton{
+      padding:2px 3vw;
+    }
+
+    .repoCards{
+      display:block;
+      margin-left:40px;
+    }
+    
+  }
