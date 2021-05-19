@@ -30,7 +30,7 @@ const App = () => {
   return (
     <div className="App">
       <form onSubmit={getSearch} className="searchForm">
-        <input className="searchBar" type="text" value={search} onChange={updateSearch} placeholder="search" />
+        <input className="searchBar" type="text" value={search} onChange={updateSearch} placeholder="search language" />
         <button className="searchButton" type="submit">
           <i className="fa fa-search" aria-hidden="true"></i>
         </button>
