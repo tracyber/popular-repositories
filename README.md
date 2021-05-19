@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Popular Repositories
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This React app displays popular repositories of the week from Github. The user can filter the repositories by the programming language of choice.
+TechStack: React, SCSS
+
+This is an internship-assignment for ProGarten
+
 
 ## Available Scripts
 
