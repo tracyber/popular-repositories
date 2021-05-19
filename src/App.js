@@ -8,14 +8,15 @@ const App = () => {
   const [query, setQuery] = useState('')
 
   useEffect(() => {
+    const getRepos = async () => {
+      const response = await fetch(`https://api.github.com/search/repositories?q=stars:%3E10000+language:${query}`);
+      const data = await response.json();
+      setRepos(data.items);
+    };
     getRepos();
   }, [query]);
 
-  const getRepos = async () => {
-    const response = await fetch(`https://api.github.com/search/repositories?q=stars:%3E10000+language:${query}`);
-    const data = await response.json();
-    setRepos(data.items);
-  };
+  
 
   const updateSearch = e => {
     setSearch(e.target.value);
