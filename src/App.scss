@@ -6,9 +6,9 @@ $primary-color: #424242;
   .searchForm{
     text-align: right;
     background-color: #303030;
-    padding:3vh 0;
+    padding:3vh 10vw;
   }
-  
+    
   .searchBar{
     padding:1vh 1vw;
     width:15vw;
@@ -30,6 +30,12 @@ $primary-color: #424242;
   }
   .searchButton:hover{
     cursor: pointer;
+  }
+  h1{
+    text-align: center;
+    font-size: 55px;
+    color:#4891f7 ;
+    text-shadow: 0px 4px 4px rgba(0,0,0,0.25);;
   }
 
   .repoCards{

@@ -35,6 +35,7 @@ const App = () => {
           <i className="fa fa-search" aria-hidden="true"></i>
         </button>
       </form>
+      <h1>Popular Repositories</h1>
 
       <div className="repoCards">
         {repos.map(repo => (
